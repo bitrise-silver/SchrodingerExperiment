@@ -24,8 +24,14 @@ final class SchrodingerExperimentTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    
+    func testSchrodinger() throws {
+        // Randomly fail !
+        let x = Int.random(in: 1..<100)
+        XCTAssertEqual(x % 2 , 0)
+    }
 
-    func testPerformanceExample() throws {
+    func noTestPerformanceExample() throws {
         // This is an example of a performance test case.
         measure {
             // Put the code you want to measure the time of here.
